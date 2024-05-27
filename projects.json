@@ -1,20 +1,23 @@
 [
     {
       "title": "KASA",
-      "description": "Consiste à développer une application web complète avec React pour une entreprise de location d'appartements entre particuliers. Les principales technologies utilisées sont React, React Router et JavaScript, en plus de HTML et CSS pour la structure et le style de l'interface utilisateur.",
+      "description": "Consiste à développer une application web complète avec React pour une entreprise de location d'appartements entre particuliers.",
       "image": "images/image-1.jpg",
-      "codeUrl": "https://github.com/exemple/projet1"
+      "codeUrl": "https://github.com/exemple/projet1",
+      "technologies": ["JavaScript", "React", "React Router"]
     },
     {
       "title": "Projet 2",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda, repellendus aperiam aut eos dolorum similique. Soluta ad odio quidem officiis hic porro optio recusandae voluptates id maiores, voluptas nam?",
       "image": "images/image-2.jpg",
-      "codeUrl": "https://github.com/exemple/projet2"
+      "codeUrl": "https://github.com/exemple/projet2",
+      "technologies": ["HTML", "CSS", "JavaScript"]
     },
     {
       "title": "Projet 3",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda, repellendus aperiam aut eos dolorum similique. Soluta ad odio quidem officiis hic porro optio recusandae voluptates id maiores, voluptas nam?",
       "image": "images/image-2.jpg",
-      "codeUrl": "https://github.com/exemple/projet3"
+      "codeUrl": "https://github.com/exemple/projet3",
+      "technologies": ["HTML", "CSS", "JavaScript"]
     }
   ]

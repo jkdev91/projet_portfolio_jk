@@ -45,6 +45,22 @@ fetch('projects.json')
       const linkGitHubContent = document.createElement('p');
       linkGitHubContent.textContent = 'lien github'
 
+      // Création de la div pour les technologies
+      const technologiesElement = document.createElement('div');
+      technologiesElement.classList.add('technologies');
+
+      const technologiesTitle = document.createElement('h5');
+      technologiesTitle.textContent = 'Technologies utilisées :';
+      technologiesElement.appendChild(technologiesTitle);
+
+      // Création des éléments pour chaque technologie
+      project.technologies.forEach(tech => {
+        const techElement = document.createElement('span');
+        techElement.textContent = tech;
+        techElement.classList.add('tech-item')
+        technologiesElement.appendChild(techElement);
+      });
+
       // const linkDemo = document.createElement('i');
       // linkDemo.classList.add('fa-solid');
       // linkDemo.classList.add('fa-up-right-from-square');
@@ -58,6 +74,7 @@ fetch('projects.json')
       linksElement.appendChild(codeElement);
       contentElement.appendChild(titleElement);
       contentElement.appendChild(descriptionElement);
+      contentElement.appendChild(technologiesElement);
       contentElement.appendChild(linksElement);
       projectElement.appendChild(imageElement);
       projectElement.appendChild(contentElement);
