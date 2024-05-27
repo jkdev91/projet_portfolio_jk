@@ -81,6 +81,10 @@ section {
     gap: 2rem;
 }
 
+.home-content {
+    width: 60%;
+}
+
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -180,7 +184,7 @@ span {
 }
 
 .about-img {
-    width: 200rem;
+    width: 400rem;
     height: 50rem;
 }
 
@@ -194,6 +198,7 @@ span {
     text-align: center;
     font-size: 4.5rem;
 }
+
 
 .about-content h2 {
     text-align: left;
@@ -378,7 +383,7 @@ span {
 
 /* Breakpoint */
 
-@media (max-width: 1204px) {
+@media (max-width: 1191px) {
 
     .home-img {
         width: 55rem;
@@ -417,7 +422,7 @@ span {
 
 } 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     /* Styles pour les grands écrans */
   
     .home-img {
@@ -431,7 +436,7 @@ span {
 
     .portfolio-box {
         width: 40rem;
-        height: 40rem;
+        height: 30rem;
     }
   }
 
