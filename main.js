@@ -34,29 +34,46 @@ window.onscroll = () => {
     // remove toggle icon and navbar
     menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
-
-//     // Attendre que les éléments .portfolio-box soient générés
-//     const portfolioBoxes = document.querySelectorAll('.portfolio-box');
-//     if (portfolioBoxes.length > 0) {
-//     ScrollReveal().reveal(portfolioBoxes, {origin: 'right'});
-// }
-
-    
 };
 
-// // scroll reveal
-// document.addEventListener('DOMContentLoaded', () => {
-//     ScrollReveal({
-//         distance: '80px',
-//         duration: 2000,
-//         delay: 200,
-//     });
+// gestion envoie email
 
-//     ScrollReveal().reveal('.home-content, heading', {origin: 'top'});
-//     ScrollReveal().reveal('.home-img, .contact form', {origin: 'bottom'});
-//     ScrollReveal().reveal('.home-contact h1, .about-img', {origin: 'left'});
-//     ScrollReveal().reveal('.home-contact p, .about-content', {origin: 'right'});
+const form = document.querySelector('form');
+const fullname = document.getElementById('name');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const subject = document.getElementById('sujet');
+const message = document.getElementById('message');
 
-// });
 
+function sendEmail () {
+    const bodyMessage = `Full Name: ${fullname.value}<br> Email: ${email.value}<br>
+                        Phone: ${phone.value}<br> Message: ${message.value}`   
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "splendor_untaken989@simplelogin.com",
+        Password : "AA18F2DDECEECB57509E8113CD090B0B5444",
+        To : 'splendor_untaken989@simplelogin.com',
+        From : "splendor_untaken989@simplelogin.com",
+        Subject : subject.value,
+        Body : bodyMessage
+    }).then(
+      message => {
+        if(message == "OK") {
+            Swal.fire({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success"
+              });
+        }
+      }
+    );
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+})
 

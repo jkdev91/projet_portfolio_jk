@@ -30,8 +30,8 @@
     <section class="home" id="home">
         <div class="home-content">
             <h3>Bienvenue sur mon portfolio !</h3>
-            <h1>John Doe</h1>
-            <h3>et je suis <span>developpeur front-end</span></h3>
+            <h1>Je suis jérome</h1>
+            <h3>Et je suis <span>developpeur front-end</span></h3>
             <p>
                 En tant qu'intégrateur web, je suis spécialisé dans la transformation de designs en interfaces utilisateur attrayantes et fonctionnelles. 
                 Grâce à une expertise approfondie en HTML, CSS et JavaScript, je peux donner vie à vos idées les plus audacieuses. 
@@ -90,23 +90,24 @@
     <!--SECTION CONTACT  -->
     <section class="contact" id="contact">
         <h2 class="heading">Contactez <span>Moi</span></h2>
-        <Form action="#">
+        <div class="error-box">
+            <div class="error-message"> aucun champ ne doit être vide</div>
+        </div>
+
+        <Form action="#" method="post" autocomplete="off">
             <div class="input-box">
-                <input type="text" placeholder="Nom">
-                
-                <input type="email" placeholder="adresse mail">
+                <input type="text" placeholder="Nom" id="name">
+                <input type="email" placeholder="adresse mail" id="email">
             </div>
             
             <div class="input-box">
-                <input type="tel" placeholder="numeros de telephone">
-                <input type="text" placeholder="sujet">
+                <input type="tel" placeholder="numeros de telephone" id="phone">
+                <input type="text" placeholder="sujet du message" id="sujet">
             </div>
 
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre Message"></textarea>
-            <div class="error-box">
-                <div class="error-message"> le champ Message ne doit pas être vide</div>
-            </div>
-            <input type="submit" value="Message envoyé" class="btn">    
+            
+            <button type="submit" class="btn">Message envoyé</button>    
         </Form>
     </section>
 
@@ -125,7 +126,11 @@
     <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- PORTFOLIO JS -->
-    <script src="./portfolio.js"></script>    
+    <script src="./portfolio.js"></script>
+    <!--SMTJS  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- SWEET ALERT2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- MAIN JS -->
     <script src="./main.js"></script>
 </body>

@@ -1,23 +1,23 @@
 [
     {
       "title": "KASA",
-      "description": "Consiste à développer une application web complète avec React pour une entreprise de location d'appartements entre particuliers.",
-      "image": "images/image-1.jpg",
-      "codeUrl": "https://github.com/exemple/projet1",
-      "technologies": ["JavaScript", "React", "React Router"]
+      "description": "Ce projet m'a permis de développer une application web, avec React pour une entreprise de location d'appartements entre particuliers.",
+      "image": "images/argentbank.png",
+      "codeUrl": "https://github.com/jkdev91/Kasa",
+      "technologies": ["Scss,","React,", "React Router"]
     },
     {
-      "title": "Projet 2",
+      "title": "Sophie Bluel",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda, repellendus aperiam aut eos dolorum similique. Soluta ad odio quidem officiis hic porro optio recusandae voluptates id maiores, voluptas nam?",
       "image": "images/image-2.jpg",
       "codeUrl": "https://github.com/exemple/projet2",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "technologies": ["HTML,", "CSS,", "JavaScript"]
     },
     {
-      "title": "Projet 3",
+      "title": "ArgentBank",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur assumenda, repellendus aperiam aut eos dolorum similique. Soluta ad odio quidem officiis hic porro optio recusandae voluptates id maiores, voluptas nam?",
       "image": "images/image-2.jpg",
-      "codeUrl": "https://github.com/exemple/projet3",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "codeUrl": "https://github.com/jkdev91/ArgentBank-website",
+      "technologies": ["React,", "Redux"]
     }
   ]
