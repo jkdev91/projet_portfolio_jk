@@ -66,14 +66,41 @@ function sendEmail () {
                 text: "You clicked the button!",
                 icon: "success"
               });
+        form.reset()      
         }
       }
     );
 }
 
+
+function checkinputs() {
+    const items = document.querySelectorAll('.item')
+    const error = document.querySelector(".error-message")
+
+    for (const item of items) {
+        if(item.value == "") {
+           item.classList.add("alert");
+           error.style.display = 'block'
+            
+        item.addEventListener("keyup", () => {
+            if(item.value != "") {
+                item.classList.remove("alert");
+                error.style.display = 'none'          
+            }
+        } )   
+        }
+    }
+}
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+    checkinputs();
 
-    sendEmail();
+    if(!fullname.classList.contains("alert") && !email.classList.contains("alert") &&
+       !phone.classList.contains("alert") && !subject.classList.contains("alert") && !message.classList.contains("alert")) {
+        sendEmail();
+       };
+
+    
 })
 

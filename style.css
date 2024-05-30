@@ -354,13 +354,14 @@ span {
     cursor: pointer;
 }
 
-.error-box {
+.error-message {
     text-align: center;
     font-size: 2rem;
     color: red;
+    display: none;
 }
 
-.blank {
+.alert {
     border: solid 2px red;
 }
 
