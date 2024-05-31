@@ -246,6 +246,7 @@ span {
 
 .portfolio-box:hover img {
     transform: scale(1.1);
+    filter: brightness(20%);
 }
 
 .portfolio-box .portfolio-layer {
@@ -284,11 +285,7 @@ span {
     gap: .6rem;
     justify-content: center;
     align-items: center;
-    /* width: 5rem; */
-    /* height: 5rem; */
-    /* background: var(--text-color); */
     border-radius: 50%;
-    /* background: none */
     color: var(--snd-bg-color);
 }
 
@@ -374,7 +371,6 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    /* background: var(--snd-bg-color); */
 }
 
 .footer-text {
@@ -445,7 +441,6 @@ span {
     /* Styles pour les grands écrans */
   
     .home-img {
-      /* width: 40rem; */
       height: 40rem;
     }
 
@@ -521,7 +516,6 @@ span {
     .contact {
       flex-direction: column;
       align-items: center;
-      /* text-align: center; */
     }
 
     .home {

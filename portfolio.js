@@ -15,8 +15,7 @@ fetch('projects.json')
       // Création des éléments enfants
       const imageElement = document.createElement('img');
       imageElement.src = project.image
-    //   imageElement.classList.add('project-image');
-    //   imageElement.style.backgroundImage = `url(${project.image})`;
+      imageElement.alt = project.altText
 
       const contentElement = document.createElement('div');
       contentElement.classList.add('portfolio-layer');
@@ -30,14 +29,9 @@ fetch('projects.json')
       const linksElement = document.createElement('div');
       linksElement.classList.add('link-project');
 
-      // const liveElement = document.createElement('a');
-      // liveElement.href = project.liveUrl;
-      // liveElement.target = '_blank';
-
       const codeElement = document.createElement('a');
       codeElement.href = project.codeUrl;
       
-
       const linkGitHub = document.createElement('i');
       linkGitHub.classList.add('fa-solid');
       linkGitHub.classList.add('fa-up-right-from-square');
@@ -61,16 +55,8 @@ fetch('projects.json')
         technologiesElement.appendChild(techElement);
       });
 
-      // const linkDemo = document.createElement('i');
-      // linkDemo.classList.add('fa-solid');
-      // linkDemo.classList.add('fa-up-right-from-square');
-
-      // const linkDemoContent = document.createElement('p');
-      // linkDemoContent.textContent = 'lien Demo'
-
 
       // Ajout des éléments enfants
-      // linksElement.appendChild(liveElement);
       linksElement.appendChild(codeElement);
       contentElement.appendChild(titleElement);
       contentElement.appendChild(descriptionElement);
@@ -80,11 +66,8 @@ fetch('projects.json')
       projectElement.appendChild(contentElement);
       codeElement.appendChild(linkGitHub);
       codeElement.appendChild(linkGitHubContent);
-      // codeElement.appendChild(linkDemo);
-      // codeElement.appendChild(linkDemoContent);
 
       // Ajout du projet à la section
-    //   projectsSection.appendChild(projectElement);
       projectcontainer.appendChild(projectElement);
     });
 
