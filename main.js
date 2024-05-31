@@ -51,9 +51,7 @@ function sendEmail () {
                         Phone: ${phone.value}<br> Message: ${message.value}`   
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "splendor_untaken989@simplelogin.com",
-        Password : "AA18F2DDECEECB57509E8113CD090B0B5444",
+        SecureToken :"c6a6abff-e65e-492c-9726-1b4c3b8fa57d",
         To : 'splendor_untaken989@simplelogin.com',
         From : "splendor_untaken989@simplelogin.com",
         Subject : subject.value,
@@ -62,8 +60,8 @@ function sendEmail () {
       message => {
         if(message == "OK") {
             Swal.fire({
-                title: "Good job!",
-                text: "You clicked the button!",
+                title: "Succes!",
+                text: "votre message à bien été envoyé!",
                 icon: "success"
               });
         form.reset()      
