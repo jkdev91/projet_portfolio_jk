@@ -10,7 +10,7 @@
     {
       "title": "KASA",
       "description": "Dans ce projet Kasa, vous allez apprendre à implémenter le front-end d'une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Vous allez travailler sur la logique de présentation des données et les composants React.",
-      "image": "images/Kasa.webp",
+      "image": "images/kasa.webp",
       "altText": "Image du projet kasa",
       "codeUrl": "https://github.com/jkdev91/Kasa",
       "technologies": ["Scss,","React,", "React Router"]
