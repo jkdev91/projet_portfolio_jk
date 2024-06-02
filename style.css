@@ -398,7 +398,7 @@ span {
 
 /* Breakpoint */
 
-@media (max-width: 1191px) {
+@media (max-width: 1100px) {
 
     .home-img {
         width: 55rem;
@@ -406,7 +406,7 @@ span {
     }
 
     .about-img {
-        width: 150rem;
+        width: 100%;
         height: 40rem;
     }
 
@@ -437,11 +437,15 @@ span {
 
 } 
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     /* Styles pour les grands écrans */
   
     .home-img {
       height: 40rem;
+    }
+
+    .about {
+        flex-direction: column;
     }
 
     .about-img {
@@ -450,7 +454,7 @@ span {
 
     .portfolio-box {
         width: 40rem;
-        height: 30rem;
+        height: 40rem;
     }
   }
 
@@ -495,10 +499,6 @@ span {
         margin-bottom: 2rem;
     }
     
-    .about {
-        flex-direction: column;
-    }
-
     .about-img {
         width: 60rem;
     }
@@ -511,12 +511,12 @@ span {
     
   
     /* Ajuster la disposition des sections */
-    .about,
+    /* .about,
     .portfolio,
     .contact {
       flex-direction: column;
       align-items: center;
-    }
+    } */
 
     .home {
         padding-bottom: 10rem;
