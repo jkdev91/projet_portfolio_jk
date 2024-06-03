@@ -8,9 +8,8 @@ menuIcon.onclick = () => {
 }
 
 // scroll section link
-
 const sections = document.querySelectorAll('section');
-const navlinks = document.querySelectorAll('header nav a');
+const navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -20,10 +19,10 @@ window.onscroll = () => {
         const id = sec.getAttribute('id')
 
         if(top >= offset && top < offset + height) {
-            navlinks.forEach(links => {
+            navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            })
+            });
         };
     });
 
