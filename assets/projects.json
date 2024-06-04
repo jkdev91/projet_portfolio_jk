@@ -2,7 +2,7 @@
     {
       "title": "Sophie Bluel",
       "description": "ce projet a pour ojectif la creation d'une page web dynamique. j'ai pu apprendre à Manipuler les éléments du DOM, à communiquer avec une API",
-      "image": "images/Sophie-Bluel.webp",
+      "image": "assets/images/Sophie-Bluel.webp",
       "altText": "Image du projet sophie bluel",
       "codeUrl": "https://github.com/jkdev91/Portfolio-sophie-bluel",
       "technologies": ["HTML,", "CSS,", "JavaScript"]
@@ -10,7 +10,7 @@
     {
       "title": "KASA",
       "description": "Dans ce projet Kasa, vous allez apprendre à implémenter le front-end d'une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. Vous allez travailler sur la logique de présentation des données et les composants React.",
-      "image": "images/Kasa.webp",
+      "image": "assets/images/kasa.webp",
       "altText": "Image du projet kasa",
       "codeUrl": "https://github.com/jkdev91/Kasa",
       "technologies": ["Scss,","React,", "React Router"]
@@ -18,7 +18,7 @@
     {
       "title": "ArgentBank",
       "description": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux. l'objectif principale etant d'intégrer le front-end avec le back-end via des appels API.",
-      "image": "images/argentbank.webp",
+      "image": "assets/images/argentbank.webp",
       "altText": "Image du projet argentbank",
       "codeUrl": "https://github.com/jkdev91/ArgentBank-website",
       "technologies": ["React,", "Redux"]

@@ -1,5 +1,5 @@
 // Récupération des données des projets depuis le fichier JSON
-fetch('projects.json')
+fetch('assets/projects.json')
   .then(response => response.json())
   .then(data => {
     console.log(data)
